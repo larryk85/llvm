@@ -811,7 +811,6 @@ void TargetPassConfig::addMachinePasses() {
     const char *IID = (const char *)(IPI->getTypeInfo());
     insertPass(TID, IID);
   }
-
   // Print the instruction selected machine code...
   printAndVerify("After Instruction Selection");
 
