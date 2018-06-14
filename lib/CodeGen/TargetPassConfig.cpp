@@ -557,7 +557,6 @@ void TargetPassConfig::addVerifyPass(const std::string &Banner) {
 /// Add common target configurable passes that perform LLVM IR to IR transforms
 /// following machine independent optimization.
 void TargetPassConfig::addIRPasses() {
-   /*
   switch (UseCFLAA) {
   case CFLAAType::Steensgaard:
     addPass(createCFLSteensAAWrapperPass());
@@ -572,7 +571,6 @@ void TargetPassConfig::addIRPasses() {
   default:
     break;
   }
-  */
 
   // Basic AliasAnalysis support.
   // Add TypeBasedAliasAnalysis before BasicAliasAnalysis so that
